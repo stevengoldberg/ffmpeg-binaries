@@ -8,5 +8,14 @@ Pod::Spec.new do |s|
     s.author           = { "Your Name" => "your.email@example.com" }
     s.source           = { :http => "https://github.com/stevengoldberg/ffmpeg-binaries/releases/download/6.0.2/ffmpeg-kit-ios.xcframework.zip" }
     s.ios.deployment_target = '12.1'
-    s.vendored_frameworks = "ffmpeg-kit.xcframework"
+    s.vendored_frameworks = [
+    "ffmpegkit.xcframework",
+    "libavcodec.xcframework",
+    "libavdevice.xcframework",
+    "libavfilter.xcframework",
+    "libavformat.xcframework",
+    "libavutil.xcframework",
+    "libswresample.xcframework",
+    "libswscale.xcframework"
+]
   end
